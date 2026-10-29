@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6c4cf1">
+  <meta name="description" content="Um divertido jogo de caça-palavras.">
+  <title>Caça-Palavras | Desafio Diário</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topo">
+    <div class="marca">🔎 Palavra<span>Play</span></div>
+    <span class="etiqueta">DESAFIO DE PALAVRAS</span>
+  </header>
+
+  <main class="container">
+    <section class="introducao">
+      <span class="emoji">🧩</span>
+      <h1>Caça-Palavras</h1>
+      <p>Encontre todas as palavras escondidas e mostre sua habilidade!</p>
+    </section>
+
+    <section class="painel" aria-label="Estatísticas da partida">
+      <div class="estatistica">
+        <span>⭐ Pontuação</span>
+        <strong id="pontuacao">0</strong>
+      </div>
+      <div class="estatistica">
+        <span>⏱️ Tempo</span>
+        <strong id="tempo">00:00</strong>
+      </div>
+      <div class="estatistica">
+        <span>🎯 Encontradas</span>
+        <strong id="progresso">0/8</strong>
+      </div>
+    </section>
+
+    <section class="jogo">
+      <div class="titulo-secao">
+        <div>
+          <h2>🌈 Tema: Mundo e diversão</h2>
+          <p>Toque na primeira letra e depois na última.</p>
+        </div>
+      </div>
+
+      <div id="grade" class="grade"
+           role="group" aria-label="Grade de letras do caça-palavras"></div>
+
+      <p id="mensagem" class="mensagem" role="status" aria-live="polite">
+        Encontre sua primeira palavra!
+      </p>
+
+      <div class="legenda">
+        <span>🟣 Palavra selecionada</span>
+        <span>🟢 Palavra encontrada</span>
+      </div>
+    </section>
+
+    <section class="lista-secao">
+      <div class="lista-titulo">
+        <h2>📚 Palavras para encontrar</h2>
+        <span id="contador">0 de 8</span>
+      </div>
+      <ul id="lista-palavras" class="lista-palavras"></ul>
+    </section>
+
+    <button id="reiniciar" class="botao">🔄 Nova partida</button>
+
+    <footer>
+      <p>Feito para aprender brincando 💜</p>
+      <p class="creditos">Projeto acadêmico • HTML, CSS e JavaScript</p>
+    </footer>
+  </main>
+</body>
+</html>
